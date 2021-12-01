@@ -23,10 +23,7 @@ tempInput = tempInput.replace('"', '')
 print('Удалил двойные кавычки.')
 tempInput = tempInput.split()
 
-if (os.path.isFile('output.txt')):
-    fileOutput = open('output.txt', 'r')
-else:
-    fileOutput = open('output.txt', 'w')
+fileOutput = open('output.txt', 'r')
 
 tempOutput = fileOutput.read().split()
 fileOutput.close()
