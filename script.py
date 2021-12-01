@@ -47,9 +47,12 @@ for i in noDuplicates:
     print(i)
 
 print('Добавляю результат в файл output.txt')
-fileOutput = open('output.txt', 'a')
+fileOutput = open('output.txt', 'a', encoding = "utf8")
 fileOutput.write(temp)
 fileOutput.close()
+
+print('Удаляю файл input.txt')
+os.remove('input.txt')
 
 print()
 print('XXXXXXX  XX    XX')
