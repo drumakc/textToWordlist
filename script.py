@@ -45,7 +45,7 @@ if os.path.isfile('input.txt'):
     noDuplicates = []
     for i in tempInput:
         if len(i) > 7:
-            if (i not in noDuplicates) and (i not in tempOutput):
+            if i not in tempOutput:
                 noDuplicates.append(i)
                 print(i)
 
